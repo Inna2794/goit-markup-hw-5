@@ -432,7 +432,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-dark);
   font-family: inherit;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-button {
   padding-left: 22px;
@@ -440,7 +442,6 @@ body {
   padding-top: 6px;
   padding-bottom: 6px;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-button {
@@ -452,7 +453,6 @@ body {
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-list {
   display: block;
@@ -526,6 +526,9 @@ body {
 .customers {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.customers-soc-item {
+  background-color: #ffffff;
 }
 
 .footer-title {
@@ -659,12 +662,12 @@ address {
 
 .hero-jpg-link {
   text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-jpg-link:hover,
 .hero-jpg-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-jpg-link:hover .footer-soc-icon,
@@ -739,6 +742,8 @@ address {
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
